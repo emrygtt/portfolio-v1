@@ -7,6 +7,7 @@ import Contact  from './components/Contact';
 import Navbar   from './components/Navbar';
 
 function App() {
+  document.title = 'Emre YIGITs Personal Site'
   return (
     <div className= 'App'>
       <Router>
