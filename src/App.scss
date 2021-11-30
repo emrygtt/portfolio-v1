@@ -5,6 +5,7 @@
 .App {
     display:flex;
     flex-direction: column;
+    width: 100%;
     height: 100vh;
     background-color: #000;
     color: #fff;
@@ -12,10 +13,10 @@
 }
 
 .navbar {
-    display: flex;
-    width: 100%;
-
+    display: block;
+    width: 80%;
     height : 10vh;
+    margin-top: 2rem;
     justify-content: center;
     align-items: center;
     z-index: 100;
@@ -152,600 +153,600 @@
     }
 }
 
-    .resume{
+.resume{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-height: 100%;
+    margin: 3rem auto;
+    float: left;
+    &-jobs {
         display: flex;
-        flex-direction: column;
-        width: 90%;
-        max-height: 100%;
-        margin: 3rem auto;
-        float: left;
-        &-jobs {
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-            &-content {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                width: 400px;
-                aspect-ratio: 2;
-                padding: 20px;
-            }
-            &-content:hover {
-                box-shadow: 0 0 0 2px #e4f500;
-                transition: .5s ease;
-            }
-        }
-        &-skills {
-            display: flex;
-            margin-top: 10px;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 100%;
-        }
-    }
-
-
-
-    h4 {
-        color:#e4f500;
-    }
-
-    .title {
-        color: #414345;
-    }
-
-    .skills {
-        margin-left: 3rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #000;
-        float: left;
-        &:hover {
-        .tl-item {
-            width: 23.3333%;
-        }
-        }
-    }
-
-    .container-FrontEnd {
-        display: flex;
-        position: relative;
-        justify-content: center;
-        box-shadow: 0 0 0 2px #e4f500;
-        &-card {
-            position: relative;
-            width: 320px;
-            height: 520px;
-            background-color: #000;
-            overflow: hidden;
-        }
-        &-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #f3e411;
-            clip-path: circle(150px at 80% 20%);
-            transition: 0.5s ease-in-out;
-        }
-        &-card:hover:before {
-            clip-path: circle(300px at 80% -20%);
-        }
-        &-card::after {
-            content: 'FrontEnd';
-            position: absolute;
-            top: 50%;
-            left: 5%;
-            font-size: 3.5em;
-            font-weight: 800;
-            font-style: italic;
-            color: rgba(255,255,255,0.2);
-        }
-        &-card {
-            &-imgBx {
-                position:absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                z-index: 10000;
-                width: 100%;
-                height: 220px;
-                transition: 0.5s;
-            }
-        }
-        &-card {
-            &-imgBx:hover {
-                top: 0%;
-                transform: translateY(0%);
-            }
-        }
-        &-card {
-            &-imgBx {
-                position:absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                z-index: 10000;
-                width: 100%;
-                height: 220px;
-                transition: 0.5s;
-                img {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    width: 270px;
-                }
-            }
-        }
-        &-card {
-            &-contentBx {
-                position:absolute;
-                direction: column;
-                bottom: 0;
-                width: 100%;
-                height: 100px;
-                text-align: center;
-                transition: 1s;
-                z-index: 10;
-            }
-        }
-        &-card {
-            &-contentBx:hover {
-                height: 220px;
-            }
-        }
-        &-card {
-            &-contentBx {
-                h2 {
-                    position: relative;
-                    font-weight: 600;
-                    letter-spacing: 1px;
-                    color: #fff;
-                }
-            }
-        }
-        &-card {
-            &-contentBx {
-                &-degree {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 8px 20px;
-                    transition: 0.5s;
-                }
-            }
-        }
-        &-card {
-            &-contentBx {
-                &-technologies-content {
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-                    align-items: center;
-                    padding: 8px 20px;
-                    transition: 0.5s;
-                    span {
-                        line-height: 26px;
-                        font-size: 14px;
-                        color: #bac0c5;
-                        margin: 5px;
-                        transition: 0.5s;
-
-                    }
-                }
-            }
-        }
-    }
-
-    .container-UITools {
-        display: flex;
-        position: relative;
-        justify-content: center;
-        box-shadow: 0 0 0 2px #2b08f1;
-        &-card {
-            position: relative;
-            width: 320px;
-            height: 520px;
-            background-color: #000;
-            overflow: hidden;
-        }
-        &-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #2b08f1;
-            clip-path: circle(150px at 80% 20%);
-            transition: 0.5s ease-in-out;
-        }
-        &-card:hover:before {
-            clip-path: circle(300px at 80% -20%);
-        }
-        &-card::after {
-            content: 'UI Tools';
-            position: absolute;
-            top: 50%;
-            left: 10%;
-            font-size: 3.5em;
-            font-weight: 800;
-            font-style: italic;
-            color: rgba(255,255,255,0.2);
-        }
-        &-card {
-            &-imgBx {
-                position:absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                z-index: 10000;
-                width: 100%;
-                height: 220px;
-                transition: 0.5s;
-            }
-        }
-        &-card {
-            &-imgBx:hover {
-                top: 0%;
-                transform: translateY(0%);
-            }
-        }
-        &-card {
-            &-imgBx {
-                position:absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                z-index: 10000;
-                width: 100%;
-                height: 220px;
-                transition: 0.5s;
-                img {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    width: 270px;
-                }
-            }
-        }
-        &-card {
-            &-contentBx {
-                position:absolute;
-                direction: column;
-                bottom: 0;
-                width: 100%;
-                height: 100px;
-                text-align: center;
-                transition: 1s;
-                z-index: 10;
-            }
-        }
-        &-card {
-            &-contentBx:hover {
-                height: 220px;
-            }
-        }
-        &-card {
-            &-contentBx {
-                h2 {
-                    position: relative;
-                    font-weight: 600;
-                    letter-spacing: 1px;
-                    color: #fff;
-                }
-            }
-        }
-        &-card {
-            &-contentBx {
-                &-degree {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 8px 20px;
-                    transition: 0.5s;
-                }
-            }
-        }
-        &-card {
-            &-contentBx {
-                &-technologies-content {
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-                    align-items: center;
-                    padding: 8px 20px;
-                    transition: 0.5s;
-                    span {
-                        line-height: 26px;
-                        font-size: 14px;
-                        color: #bac0c5;
-                        margin: 5px;
-                        transition: 0.5s;
-
-                    }
-                }
-            }
-        }
-    }
-
-    .container-BackEnd {
-        display: flex;
-        position: relative;
-        justify-content: center;
-        box-shadow: 0 0 0 2px #f10808;
-        &-card {
-            position: relative;
-            width: 320px;
-            height: 520px;
-            background-color: #000;
-            overflow: hidden;
-        }
-        &-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #f10808;
-            clip-path: circle(150px at 80% 20%);
-            transition: 0.5s ease-in-out;
-        }
-        &-card:hover:before {
-            clip-path: circle(300px at 80% -20%);
-        }
-        &-card::after {
-            content: 'BackEnd';
-            position: absolute;
-            top: 50%;
-            left: 5%;
-            font-size: 3.5em;
-            font-weight: 800;
-            font-style: italic;
-            color: rgba(255,255,255,0.2);
-        }
-        &-card {
-            &-imgBx {
-                position:absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                z-index: 10000;
-                width: 100%;
-                height: 220px;
-                transition: 0.5s;
-            }
-        }
-        &-card {
-            &-imgBx:hover {
-                top: 0%;
-                transform: translateY(0%);
-            }
-        }
-        &-card {
-            &-imgBx {
-                position:absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                z-index: 10000;
-                width: 100%;
-                height: 220px;
-                transition: 0.5s;
-                img {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    width: 270px;
-                }
-            }
-        }
-        &-card {
-            &-contentBx {
-                position:absolute;
-                direction: column;
-                bottom: 0;
-                width: 100%;
-                height: 100px;
-                text-align: center;
-                transition: 1s;
-                z-index: 10;
-            }
-        }
-        &-card {
-            &-contentBx:hover {
-                height: 220px;
-            }
-        }
-        &-card {
-            &-contentBx {
-                h2 {
-                    position: relative;
-                    font-weight: 600;
-                    letter-spacing: 1px;
-                    color: #fff;
-                }
-            }
-        }
-        &-card {
-            &-contentBx {
-                &-degree {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 8px 20px;
-                    transition: 0.5s;
-                }
-            }
-        }
-        &-card {
-            &-contentBx {
-                &-technologies-content {
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-                    align-items: center;
-                    padding: 8px 20px;
-                    transition: 0.5s;
-                    span {
-                        line-height: 26px;
-                        font-size: 14px;
-                        color: #bac0c5;
-                        margin: 5px;
-                        transition: 0.5s;
-
-                    }
-                }
-            }
-        }
-    }
-
-    .container-Team {
-        display: flex;
-        position: relative;
-        justify-content: center;
-        box-shadow: 0 0 0 2px #06c916;
-        &-card {
-            position: relative;
-            width: 320px;
-            height: 520px;
-            background-color: #000;
-            overflow: hidden;
-        }
-        &-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #06c916;
-            clip-path: circle(150px at 80% 20%);
-            transition: 0.5s ease-in-out;
-        }
-        &-card:hover:before {
-            clip-path: circle(300px at 80% -20%);
-        }
-        &-card::after {
-            content: 'TeamWork';
-            position: absolute;
-            top: 50%;
-            left: 5%;
-            font-size: 3em;
-            font-weight: 800;
-            font-style: italic;
-            color: rgba(255,255,255,0.2);
-        }
-        &-card {
-            &-imgBx {
-                position:absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                z-index: 10000;
-                width: 100%;
-                height: 220px;
-                transition: 0.5s;
-            }
-        }
-        &-card {
-            &-imgBx:hover {
-                top: 0%;
-                transform: translateY(0%);
-            }
-        }
-        &-card {
-            &-imgBx {
-                position:absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                z-index: 10000;
-                width: 100%;
-                height: 220px;
-                transition: 0.5s;
-                img {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    width: 270px;
-                }
-            }
-        }
-        &-card {
-            &-contentBx {
-                position:absolute;
-                direction: column;
-                bottom: 0;
-                width: 100%;
-                height: 100px;
-                text-align: center;
-                transition: 1s;
-                z-index: 10;
-            }
-        }
-        &-card {
-            &-contentBx:hover {
-                height: 220px;
-            }
-        }
-        &-card {
-            &-contentBx {
-                h2 {
-                    position: relative;
-                    font-weight: 600;
-                    letter-spacing: 1px;
-                    color: #fff;
-                }
-            }
-        }
-        &-card {
-            &-contentBx {
-                &-degree {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 8px 20px;
-                    transition: 0.5s;
-                }
-            }
-        }
-        &-card {
-            &-contentBx {
-                &-technologies-content {
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-                    align-items: center;
-                    padding: 8px 20px;
-                    transition: 0.5s;
-                    span {
-                        line-height: 26px;
-                        font-size: 14px;
-                        color: #bac0c5;
-                        margin: 5px;
-                        transition: 0.5s;
-
-                    }
-                }
-            }
-        }
-    }
-    .contact {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 100%;
-        height: 100%;
-        &-info {
+        justify-content: space-between;
+        &-content {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            font-size: 30px;
+            width: 400px;
+            aspect-ratio: 2;
+            padding: 20px;
+        }
+        &-content:hover {
+            box-shadow: 0 0 0 2px #e4f500;
+            transition: .5s ease;
         }
     }
-    .email {
-        color: #e4f500;
+    &-skills {
+        display: flex;
+        margin-top: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
     }
+}
+
+
+
+h4 {
+    color:#e4f500;
+}
+
+.title {
+    color: #414345;
+}
+
+.skills {
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    float: left;
+    &:hover {
+    .tl-item {
+        width: 23.3333%;
+    }
+    }
+}
+
+.container-FrontEnd {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    box-shadow: 0 0 0 2px #e4f500;
+    &-card {
+        position: relative;
+        width: 320px;
+        height: 520px;
+        background-color: #000;
+        overflow: hidden;
+    }
+    &-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #f3e411;
+        clip-path: circle(150px at 80% 20%);
+        transition: 0.5s ease-in-out;
+    }
+    &-card:hover:before {
+        clip-path: circle(300px at 80% -20%);
+    }
+    &-card::after {
+        content: 'FrontEnd';
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        font-size: 3.5em;
+        font-weight: 800;
+        font-style: italic;
+        color: rgba(255,255,255,0.2);
+    }
+    &-card {
+        &-imgBx {
+            position:absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10000;
+            width: 100%;
+            height: 220px;
+            transition: 0.5s;
+        }
+    }
+    &-card {
+        &-imgBx:hover {
+            top: 0%;
+            transform: translateY(0%);
+        }
+    }
+    &-card {
+        &-imgBx {
+            position:absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10000;
+            width: 100%;
+            height: 220px;
+            transition: 0.5s;
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 270px;
+            }
+        }
+    }
+    &-card {
+        &-contentBx {
+            position:absolute;
+            direction: column;
+            bottom: 0;
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            transition: 1s;
+            z-index: 10;
+        }
+    }
+    &-card {
+        &-contentBx:hover {
+            height: 220px;
+        }
+    }
+    &-card {
+        &-contentBx {
+            h2 {
+                position: relative;
+                font-weight: 600;
+                letter-spacing: 1px;
+                color: #fff;
+            }
+        }
+    }
+    &-card {
+        &-contentBx {
+            &-degree {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 8px 20px;
+                transition: 0.5s;
+            }
+        }
+    }
+    &-card {
+        &-contentBx {
+            &-technologies-content {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                padding: 8px 20px;
+                transition: 0.5s;
+                span {
+                    line-height: 26px;
+                    font-size: 14px;
+                    color: #bac0c5;
+                    margin: 5px;
+                    transition: 0.5s;
+
+                }
+            }
+        }
+    }
+}
+
+.container-UITools {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    box-shadow: 0 0 0 2px #2b08f1;
+    &-card {
+        position: relative;
+        width: 320px;
+        height: 520px;
+        background-color: #000;
+        overflow: hidden;
+    }
+    &-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #2b08f1;
+        clip-path: circle(150px at 80% 20%);
+        transition: 0.5s ease-in-out;
+    }
+    &-card:hover:before {
+        clip-path: circle(300px at 80% -20%);
+    }
+    &-card::after {
+        content: 'UI Tools';
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        font-size: 3.5em;
+        font-weight: 800;
+        font-style: italic;
+        color: rgba(255,255,255,0.2);
+    }
+    &-card {
+        &-imgBx {
+            position:absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10000;
+            width: 100%;
+            height: 220px;
+            transition: 0.5s;
+        }
+    }
+    &-card {
+        &-imgBx:hover {
+            top: 0%;
+            transform: translateY(0%);
+        }
+    }
+    &-card {
+        &-imgBx {
+            position:absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10000;
+            width: 100%;
+            height: 220px;
+            transition: 0.5s;
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 270px;
+            }
+        }
+    }
+    &-card {
+        &-contentBx {
+            position:absolute;
+            direction: column;
+            bottom: 0;
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            transition: 1s;
+            z-index: 10;
+        }
+    }
+    &-card {
+        &-contentBx:hover {
+            height: 220px;
+        }
+    }
+    &-card {
+        &-contentBx {
+            h2 {
+                position: relative;
+                font-weight: 600;
+                letter-spacing: 1px;
+                color: #fff;
+            }
+        }
+    }
+    &-card {
+        &-contentBx {
+            &-degree {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 8px 20px;
+                transition: 0.5s;
+            }
+        }
+    }
+    &-card {
+        &-contentBx {
+            &-technologies-content {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                padding: 8px 20px;
+                transition: 0.5s;
+                span {
+                    line-height: 26px;
+                    font-size: 14px;
+                    color: #bac0c5;
+                    margin: 5px;
+                    transition: 0.5s;
+
+                }
+            }
+        }
+    }
+}
+
+.container-BackEnd {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    box-shadow: 0 0 0 2px #f10808;
+    &-card {
+        position: relative;
+        width: 320px;
+        height: 520px;
+        background-color: #000;
+        overflow: hidden;
+    }
+    &-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #f10808;
+        clip-path: circle(150px at 80% 20%);
+        transition: 0.5s ease-in-out;
+    }
+    &-card:hover:before {
+        clip-path: circle(300px at 80% -20%);
+    }
+    &-card::after {
+        content: 'BackEnd';
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        font-size: 3.5em;
+        font-weight: 800;
+        font-style: italic;
+        color: rgba(255,255,255,0.2);
+    }
+    &-card {
+        &-imgBx {
+            position:absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10000;
+            width: 100%;
+            height: 220px;
+            transition: 0.5s;
+        }
+    }
+    &-card {
+        &-imgBx:hover {
+            top: 0%;
+            transform: translateY(0%);
+        }
+    }
+    &-card {
+        &-imgBx {
+            position:absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10000;
+            width: 100%;
+            height: 220px;
+            transition: 0.5s;
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 270px;
+            }
+        }
+    }
+    &-card {
+        &-contentBx {
+            position:absolute;
+            direction: column;
+            bottom: 0;
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            transition: 1s;
+            z-index: 10;
+        }
+    }
+    &-card {
+        &-contentBx:hover {
+            height: 220px;
+        }
+    }
+    &-card {
+        &-contentBx {
+            h2 {
+                position: relative;
+                font-weight: 600;
+                letter-spacing: 1px;
+                color: #fff;
+            }
+        }
+    }
+    &-card {
+        &-contentBx {
+            &-degree {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 8px 20px;
+                transition: 0.5s;
+            }
+        }
+    }
+    &-card {
+        &-contentBx {
+            &-technologies-content {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                padding: 8px 20px;
+                transition: 0.5s;
+                span {
+                    line-height: 26px;
+                    font-size: 14px;
+                    color: #bac0c5;
+                    margin: 5px;
+                    transition: 0.5s;
+
+                }
+            }
+        }
+    }
+}
+
+.container-Team {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    box-shadow: 0 0 0 2px #06c916;
+    &-card {
+        position: relative;
+        width: 320px;
+        height: 520px;
+        background-color: #000;
+        overflow: hidden;
+    }
+    &-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #06c916;
+        clip-path: circle(150px at 80% 20%);
+        transition: 0.5s ease-in-out;
+    }
+    &-card:hover:before {
+        clip-path: circle(300px at 80% -20%);
+    }
+    &-card::after {
+        content: 'TeamWork';
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        font-size: 3em;
+        font-weight: 800;
+        font-style: italic;
+        color: rgba(255,255,255,0.2);
+    }
+    &-card {
+        &-imgBx {
+            position:absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10000;
+            width: 100%;
+            height: 220px;
+            transition: 0.5s;
+        }
+    }
+    &-card {
+        &-imgBx:hover {
+            top: 0%;
+            transform: translateY(0%);
+        }
+    }
+    &-card {
+        &-imgBx {
+            position:absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10000;
+            width: 100%;
+            height: 220px;
+            transition: 0.5s;
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 270px;
+            }
+        }
+    }
+    &-card {
+        &-contentBx {
+            position:absolute;
+            direction: column;
+            bottom: 0;
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            transition: 1s;
+            z-index: 10;
+        }
+    }
+    &-card {
+        &-contentBx:hover {
+            height: 220px;
+        }
+    }
+    &-card {
+        &-contentBx {
+            h2 {
+                position: relative;
+                font-weight: 600;
+                letter-spacing: 1px;
+                color: #fff;
+            }
+        }
+    }
+    &-card {
+        &-contentBx {
+            &-degree {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 8px 20px;
+                transition: 0.5s;
+            }
+        }
+    }
+    &-card {
+        &-contentBx {
+            &-technologies-content {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                padding: 8px 20px;
+                transition: 0.5s;
+                span {
+                    line-height: 26px;
+                    font-size: 14px;
+                    color: #bac0c5;
+                    margin: 5px;
+                    transition: 0.5s;
+
+                }
+            }
+        }
+    }
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    &-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+}
+.email {
+    color: #e4f500;
+}

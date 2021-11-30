@@ -2,7 +2,9 @@ import { motion } from "framer-motion"
 
 const Contact = () => {
     return (
-        <div className= 'contact'>
+        <motion.div className= 'contact'
+        initial= {{opacity:0}} 
+        animate= {{ opacity:1}}>
             <div className= 'contact-info'>
                 <motion.p>
                 Heyy, if you want to reach me you can email me <br/>
@@ -11,7 +13,7 @@ const Contact = () => {
                 Have a good day !!
                 </motion.p>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

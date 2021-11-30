@@ -4,7 +4,10 @@ import React from 'react'
 
 const Resume = () => {
     return (
-    <div className= 'resume'>
+    <motion.div className= 'resume'
+    initial= {{opacity:0}} 
+    animate= {{ opacity:1}}
+    >
         <div className = 'resume-jobs'>
             <div className= 'resume-jobs-content'>
                 <h4>2018</h4>
@@ -111,7 +114,7 @@ const Resume = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </motion.div>
     )
 }
 
